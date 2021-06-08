@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 } */
+.list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+/* .item {
+} */
+.liItem {
+  margin: 50px;
+  height: 330px;
+  width: 200px;
+  border: solid 3px grey;
+  border-radius: 8px;
+  background-color: cadetblue;
+}
+.title {
+  text-align: center;
+}
+.types {
+  border-top: solid 2px grey;
+  list-style-type: none;
+  text-align: left;
+  font-weight: bold;
+}
+.typesList {
+  padding: 0;
+  text-align: left;
+}

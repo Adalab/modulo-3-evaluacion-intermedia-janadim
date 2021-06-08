@@ -1,17 +1,23 @@
+import "../stylesheets/App.css";
+
 const Pokemon = (props) => {
   const renderTypes = () => {
     return props.types.map((type, index) => {
-      return <li key={index}>{type}</li>;
+      return (
+        <li className="types" key={index}>
+          {type}
+        </li>
+      );
     });
   };
 
   return (
     <>
-      <article>
-        <img src={props.url} alt="Pokemon" width="150" height="200"></img>
-        <h2>{props.name}</h2>
+      <article className="item">
+        <img src={props.url} alt="Pokemon" width="200" height="200"></img>
+        <h2 className="title">{props.name}</h2>
 
-        <ul>{renderTypes()}</ul>
+        <ul className="typesList">{renderTypes()}</ul>
       </article>
     </>
   );

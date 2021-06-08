@@ -1,7 +1,5 @@
 const Pokemon = (props) => {
   const renderTypes = () => {
-    console.log(props.types);
-
     return props.types.map((type, index) => {
       return <li key={index}>{type}</li>;
     });

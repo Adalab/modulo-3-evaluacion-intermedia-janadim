@@ -6,7 +6,7 @@ import PokeList from "./PokeList";
 function App() {
   return (
     <>
-      <h1>Mi lista de Pokemon</h1>
+      <h1 className="mainTitle">Mi lista de Pokemon</h1>
 
       <PokeList list={data} />
     </>
